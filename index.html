@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculadora" id="calculadora">
+      <!-- Fila 1 -->
+      <div class="celda pantalla">
+        <div class="valor" id="valor-pantalla">0</div>
+      </div>
+      <div class="celda boton borrar">
+        <button data-accion="borrar" aria-label="Borrar">DEL</button>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="celda boton"><button data-tecla="7">7</button></div>
+      <div class="celda boton"><button data-tecla="8">8</button></div>
+      <div class="celda boton"><button data-tecla="9">9</button></div>
+      <div class="celda boton operador"><button data-tecla="/">/</button></div>
+
+      <!-- Fila 3 -->
+      <div class="celda boton"><button data-tecla="4">4</button></div>
+      <div class="celda boton"><button data-tecla="5">5</button></div>
+      <div class="celda boton"><button data-tecla="6">6</button></div>
+      <div class="celda boton operador"><button data-tecla="*">*</button></div>
+
+      <!-- Fila 4 -->
+      <div class="celda boton"><button data-tecla="1">1</button></div>
+      <div class="celda boton"><button data-tecla="2">2</button></div>
+      <div class="celda boton"><button data-tecla="3">3</button></div>
+      <div class="celda boton operador"><button data-tecla="-">-</button></div>
+
+      <!-- Fila 5 -->
+      <div class="celda boton limpiar">
+        <button data-accion="limpiar">C</button>
+      </div>
+      <div class="celda boton cero"><button data-tecla="0">0</button></div>
+      <div class="celda boton igual">
+        <button data-accion="igual">=</button>
+      </div>
+      <div class="celda boton operador"><button data-tecla="+">+</button></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

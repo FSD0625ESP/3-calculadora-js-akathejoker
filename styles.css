@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f8f8f8;
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-auto-rows: 60px;
+  border: 1px solid #000;
+}
+
+.celda {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pantalla {
+  grid-column: 1 / span 3;
+  background: #fff;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.valor {
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #bbb;
+}
